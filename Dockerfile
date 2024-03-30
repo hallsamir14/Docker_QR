@@ -11,7 +11,7 @@ RUN useradd -m myuser
 COPY requirements.txt ./
 
 # Install the Python packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt 
 
 # Before copying the application code, create the logs and qr_codes directories
 # and ensure they are owned by the non-root user
@@ -27,4 +27,4 @@ USER myuser
 # This allows additional command-line arguments to be passed to the script via the docker run command
 ENTRYPOINT ["python", "main.py"]
 # this sets a default argument, its also set in the program but this just illustrates how to use cmd and override it from the terminal
-CMD ["--url","http://github.com/kaw393939"]
+CMD ["--url","https://github.com/hallsamir14"]

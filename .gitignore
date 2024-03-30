@@ -1,3 +1,6 @@
+#ignore duplicate logscreenshot
+log.png
+
 venv
 images
 .python_history# Byte-compiled / optimized / DLL files
